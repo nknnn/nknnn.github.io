@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hexo+Github 博客搭建教程 | 回响</title>
+  <meta name="keywords" content=" 博客 , Hexo , 教程 , 学习记录 , 技能 ">
+  <meta name="description" content="Hexo+Github 博客搭建教程 | 回响">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="https://nknnn.top/404.html">
+<meta property="og:site_name" content="回响">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-10T15:59:13.000Z">
+<meta property="article:modified_time" content="2020-03-10T16:00:38.417Z">
+<meta property="article:author" content="记忆存储">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="true">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>记忆存储</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:1598554108@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=1598554108&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88151013" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(1)</small></div></li>
+    
+        
+            
+            <li><div data-rel="教程">教程<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="学习记录">学习记录<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="1">
+<input type="hidden" id="yelog_site_word_count" value="2.9k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://yiki.tech/">Guan FuQing</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode === 13){return false;}">
+        <input id="local-search-input" class="search" type="text" placeholder="以 in: 开头进行全文搜索" />
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">教程</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">学习记录</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">技能</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="教程 学习记录 "
+           href="/archives/%E5%AE%9E%E9%AA%8C%E4%B8%87%E4%B8%88two.html"
+           data-tag="博客,Hexo,教程,学习记录,技能"
+           data-author="" >
+            <span class="post-title" title="Hexo+Github 博客搭建教程">Hexo+Github 博客搭建教程</span>
+            <span class="post-date" title="2020-03-11 19:52:42">2020/03/11</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-实验万丈two" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Hexo+Github 博客搭建教程</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="教程">教程</a>/
+            
+                <a  data-rel="学习记录">学习记录</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color3">博客</a>
+            
+            <a class="color5">Hexo</a>
+            
+            <a class="color3">教程</a>
+            
+            <a class="color5">学习记录</a>
+            
+            <a class="color3">技能</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-03-13 14:52:37'>2020-03-11 19:52</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:2.9k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#阅读须知"><span class="toc-text">阅读须知</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言 </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#简单使用方法"><span class="toc-text">简单使用方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#总览"><span class="toc-text">总览 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第一部分 - 搭建"><span class="toc-text">第一部分 搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo 搭建步骤"><span class="toc-text">Hexo 搭建步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1- 安装 Git"><span class="toc-text">1. 安装 Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2- 安装 nodejs"><span class="toc-text">2. 安装 nodejs</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加国内镜像源"><span class="toc-text">添加国内镜像源 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3- 安装 Hexo"><span class="toc-text">3. 安装 Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4- 注册 Github 账号创建个人仓库"><span class="toc-text">4. 注册 Github 账号创建个人仓库 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5- 生成 SSH 添加到 GitHub"><span class="toc-text">5. 生成 SSH 添加到 GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6- 将 hexo 部署到 GitHub"><span class="toc-text">6. 将 hexo 部署到 GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7- 设置个人域名"><span class="toc-text">7. 设置个人域名 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8- 写文章、发布文章"><span class="toc-text">8. 写文章、发布文章 </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二部分 - 定制"><span class="toc-text">第二部分 定制 </span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="阅读须知"><a href="# 阅读须知" class="headerlink" title="阅读须知"></a>阅读须知</h1><blockquote>
+<p>注意，这篇文章篇幅较长, 主要针对新手，每一步很详细，所以可能会显得比较啰嗦，所以建议基础比较好小伙伴根据目录选择自己感兴趣的部分跳着看，不要文章没看，上来先喷一下！谢谢⊙o⊙。<br>教程内容随意复制使用，引用的话请加一个参考链接，谢谢！</p>
+</blockquote>
+<h1 id="前言"><a href="# 前言" class="headerlink" title="前言"></a>前言 </h1><p> 倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新</p>
+<h2 id="简单使用方法"><a href="# 简单使用方法" class="headerlink" title="简单使用方法"></a>简单使用方法</h2><ol>
+<li>在 GitHub 创立本项目仓库 </li>
+<li>安装 Git, 安装 nodeJS </li>
+<li>你可以直接复制一份源码到你的仓库，点击 clone 下载到本地 </li>
+<li>在本地博客仓库运行 npm i 命令安装依赖包 </li>
+<li>修改配置信息，改成自己的信息 </li>
+<li>运行命令 hexo clean（清除生成文件），hexo g（生成网页）， hexo s（本地预览），hexo d（部署）<br>有什么问题可以在文章最后评论区留言和讨论，喜欢请点赞，支持可打赏。</li>
+</ol>
+<h1 id="总览"><a href="# 总览" class="headerlink" title="总览"></a>总览 </h1><p> 教程大致分三个部分，</p>
+<ol>
+<li>第一部分：hexo 的初级搭建还有部署到 github page 上，以及个人域名的绑定。</li>
+<li>第二部分：hexo 的基本配置，更换主题，实现多终端工作，以及在 coding page 部署实现国内外分流</li>
+<li>第三部分：hexo 添加各种功能，包括搜索的 SEO，阅读量统计，访问量统计和评论系统等。</li>
+</ol>
+<h1 id="第一部分 - 搭建"><a href="# 第一部分 - 搭建" class="headerlink" title="第一部分 搭建"></a>第一部分 搭建</h1><p>hexo 的初级搭建还有部署到 github page 上，以及个人域名的绑定。</p>
+<h2 id="Hexo 搭建步骤"><a href="#Hexo 搭建步骤" class="headerlink" title="Hexo 搭建步骤"></a>Hexo 搭建步骤</h2><ol>
+<li>安装 Git</li>
+<li>安装 Node.js</li>
+<li>安装 Hexo</li>
+<li>GitHub 创建个人仓库</li>
+<li>生成 SSH 添加到 GitHub</li>
+<li>将 hexo 部署到 GitHub</li>
+<li>设置个人域名</li>
+<li>发布文章</li>
+</ol>
+<h2 id="1- 安装 Git"><a href="#1- 安装 Git" class="headerlink" title="1. 安装 Git"></a>1. 安装 Git</h2><p>为了把本地的网页文件上传到 github 上面去，需要用到工具———Git <a href="https://git-scm.com/download" target="_blank" rel="noopener">下载地址</a>。Git 是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。Git 非常强大，建议每个人都去了解一下。廖雪峰老师的 Git 教程写的非常好，大家可以看一下。<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">Git 教程</a><br>windows：到 git 官网上下载.exe 文件,Download git, 安装选项还是全部默认，只不过最后一步添加路径时选择 Use Git from the Windows Command Prompt，这样我们就可以直接在命令提示符里打开 git 了。</p>
+<blockquote>
+<p>顺便说一下，windows 在 git 安装完后，就可以直接使用 git bash 来敲命令行了，不用自带的 cmd，cmd 有点难用。<br>安装完成后在命令提示符中输入 <code>git --version</code> 来查看一下版本验证是否安装成功。</p>
+</blockquote>
+<h2 id="2- 安装 nodejs"><a href="#2- 安装 nodejs" class="headerlink" title="2. 安装 nodejs"></a>2. 安装 nodejs</h2><p>Hexo 是基于 node.js 编写的，所以需要安装一下 node.js <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">下载地址 </a> 和里面的 npm 工具。<br>windows：下载稳定版或者最新版都可以 Node.js，安装选项全部默认，一路点击 Next。<br>最后安装好之后，按 Win+R 打开命令提示符，输入 <code>node -v</code> 和<code>npm -v</code>，如果出现版本号，那么就安装成功了。</p>
+<blockquote>
+<h3 id="添加国内镜像源"><a href="# 添加国内镜像源" class="headerlink" title="添加国内镜像源"></a>添加国内镜像源 </h3><p> 如果没有梯子的话，可以使用阿里的国内镜像进行加速。将下面的代码输入到 Git 中运行即可<br><code>Npm config set registry https://registry.npm.taobao.org</code></p>
+</blockquote>
+<h2 id="3- 安装 Hexo"><a href="#3- 安装 Hexo" class="headerlink" title="3. 安装 Hexo"></a>3. 安装 Hexo</h2><p>前面 git 和 nodejs 安装好后，就可以安装 hexo 了，你可以先创建一个文件夹 MyBlog，用来存放自己的博客文件，然后 <code>cd</code> 到这个文件夹下（或者在这个文件夹下直接右键 git bash 打开）。<br>比如我的博客文件都存放在 D:\myblog 目录下。<br>在该目录下右键点击 Git Bash Here，打开 git 的控制台窗口，以后我们所有的操作都在 git 控制台进行，就不用 Windows 自带的 cmd 了。<br>定位到该目录下，输入 <code>npm install -g hexo-cli</code> 安装 Hexo。可能会有几个报错，无视它就行。</p>
+<blockquote>
+<p><code>npm install -g hexo-cli</code></p>
+</blockquote>
+<p>安装完后输入 <code>hexo -v</code> 验证是否安装成功。<br>至此 hexo 就安装完了。<br>接下来初始化一下 hexo, 即初始化我们的网站，输入 <code>hexo init 初始化文件夹</code><br><code>hexo init myblog</code><br> 这个 MyBlog 文件夹，可以自己取什么名字都行，然后，接着输入 <code>npm install</code> 安装必备的组件</p>
+<blockquote>
+<p><code>cd MyBlog</code>      是指进入这个 MyBlog 文件夹<br><code>npm install</code></p>
+</blockquote>
+<p>新建完成后，指定文件夹 MyBlog 目录下有：<br>•    <code>node_modules</code>: 依赖包 <br>•    <code>public</code>：存放生成的页面<br>•    <code>scaffolds</code>：生成文章的一些模板<br>•    <code>source</code>：用来存放你的文章<br>•    <code>themes</code>：主题文件<br>•    <code>_config.yml</code>: 博客的配置文件<br> 这样本地的网站配置也弄好啦，输入 <code>hexo g</code> 生成静态网页，然后输入 <code>hexo s</code> 打开本地服务器</p>
+<blockquote>
+<p><code>Hexo g</code><br><code>Hexo server(或者简写：hexo s)</code></p>
+</blockquote>
+<p>然后浏览器打开 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>，就可以看到我们的博客啦，效果如下：<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/hexo.png"/><br> 按 ctrl+c 关闭本地服务器。</p>
+<h2 id="4- 注册 Github 账号创建个人仓库"><a href="#4- 注册 Github 账号创建个人仓库" class="headerlink" title="4. 注册 Github 账号创建个人仓库"></a>4. 注册 Github 账号创建个人仓库 </h2><p> 接下来就去注册一个 github 账号，用来存放我们的网站。大多数小伙伴应该都有了吧，作为一个合格的程序猿（媛）还是要有一个的。<br>打开 <a href="https://github.com/，新建一个项目仓库 New" target="_blank" rel="noopener">https://github.com/，新建一个项目仓库 New</a> repository，如下所示：<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/4.png"/><br> 然后如下图所示，输入自己的项目名字，后面一定要加 <code>.github.io</code> 后缀，<code>README</code>初始化也要勾上。<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/3.png"/></p>
+<blockquote>
+<p>要创建一个和你用户名相同的仓库，后面加 <code>.github.io</code>，只有这样<br> 将来要部署到 <code>GitHub page</code> 的时候，才会被识别，也就是 <a href="http://xxxx.github.io" target="_blank" rel="noopener">http://xxxx.github.io</a><br> 其中 xxx 就是你注册 GitHub` 的用户名。例如我的：<a href="http://nknnn.github.io" target="_blank" rel="noopener">http://nknnn.github.io</a></p>
+</blockquote>
+<h2 id="5- 生成 SSH 添加到 GitHub"><a href="#5- 生成 SSH 添加到 GitHub" class="headerlink" title="5. 生成 SSH 添加到 GitHub"></a>5. 生成 SSH 添加到 GitHub</h2><p>生成 SSH 添加到 GitHub，连接 Github 与本地。<br>右键打开 git bash，然后输入下面命令：</p>
+<blockquote>
+<p><code>git config --global user.name &quot;yourname&quot;</code><br><code>git config --global user.email &quot;youremail&quot;</code></p>
+</blockquote>
+<p>这里的 <code>yourname</code> 输入你的 GitHub 用户名，<code>youremail</code>输入你 GitHub 的邮箱。这样 GitHub 才能知道你是不是对应它的账户。例如我的：</p>
+<blockquote>
+<p><code>git config --global user.name &quot;nknnn&quot;</code><br><code>git config --global user.email 1598554108@qq.com</code></p>
+</blockquote>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<blockquote>
+<p><code>git config user.name</code><br><code>git config user.email</code></p>
+</blockquote>
+<p>然后创建 SSH, 一路回车</p>
+<blockquote>
+<p>ssh，简单来讲，就是一个秘钥，其中，id_rsa 是你这台电脑的私人秘钥不能给别人看的，id_rsa.pub 是公共秘钥，可以随便给别人看。把这个公钥放在 GitHub 上，这样当你链接 GitHub 自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过 git 上传你的文件到 GitHub 上。</p>
+</blockquote>
+<blockquote>
+<p><code>ssh-keygen -t rsa -C &quot;youremail&quot;</code></p>
+</blockquote>
+<p>这个时候它会告诉你已经生成了.ssh 的文件夹。在你的电脑中找到这个文件夹。或者 git bash 中输入</p>
+<blockquote>
+<p><code>cat ~/.ssh/id_rsa.pub</code></p>
+</blockquote>
+<p>将输出的内容复制到框中，点击确定保存。<br>打开 github，在头像下面点击 <code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个 SSH，名字随便取一个都可以，把你的 id_rsa.pub 里面的信息复制进去。如图：<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/5.png"/><br> 在 git bash 输入<code>ssh -T git@github.com</code>，如果如下图所示，出现你的用户名，那就成功了。<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/6.png"/></p>
+<h2 id="6- 将 hexo 部署到 GitHub"><a href="#6- 将 hexo 部署到 GitHub" class="headerlink" title="6. 将 hexo 部署到 GitHub"></a>6. 将 hexo 部署到 GitHub</h2><p>这一步，我们就可以将 hexo 和 GitHub 关联起来，也就是将 hexo 生成的文章部署到 GitHub 上，打开博客根目录下的 <code>_config.yml</code> 文件，这是博客的配置文件，在这里你可以修改与博客配置相关的各种信息。<br>修改最后一行的配置：(<code>顶字不用输入 </code>，但<code> 下三行代码 </code> 要<code>用空格 </code> 来调整代码位置 至如下显示)</p>
+<blockquote>
+<p><code>deploy:</code><br>顶 <code>type: git</code><br> 顶<code>repository: https://github.com/shw2018/shw2018.github.io</code><br>顶<code>branch: master</code></p>
+</blockquote>
+<p><code>repository</code>修改为你自己的 <code>github 项目地址</code> 即可，就是部署时，告诉工具，将生成网页通过 git 方式上传到你对应的链接仓库中。<br>这个时候需要先安装<code>deploy-git</code> ，也就是部署的命令, 这样你才能用命令部署到 GitHub。</p>
+<blockquote>
+<p><code>npm install hexo-deployer-git –save</code></p>
+</blockquote>
+<p>然后</p>
+<blockquote>
+<p><code>hexo clean</code><br><code>hexo generate</code><br><code>hexo deploy</code></p>
+</blockquote>
+<p>其中 <code>hexo clean</code>清除了你之前生成的东西，也可以不加。<code>hexo generate</code>顾名思义，生成静态文章，可以用 <code>hexo g</code>缩写 ，<code>hexo deploy</code>部署文章，可以用 <code>hexo d</code> 缩写</p>
+<blockquote>
+<p>注意 <code>deploy</code> 时可能要你输入 <code>username</code> 和<code>password</code>。</p>
+</blockquote>
+<p>得到下图就说明部署成功了，过一会儿就可以在<code>http://yourname.github.io</code> 这个网站看到你的博客了<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/7.png"/></p>
+<h2 id="7- 设置个人域名"><a href="#7- 设置个人域名" class="headerlink" title="7. 设置个人域名"></a>7. 设置个人域名 </h2><p> 现在你的个人网站的地址是<code>yourname.github.io</code>，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。</p>
+<blockquote>
+<p>    不过，这一步不是必要的，如果目前还不想买域名可以先跳过，继续看后面的，以后想买域名了在还看这块</p>
+</blockquote>
+<p>首先你得购买一个专属域名，xx 云都能买，看你个人喜好了。<br>这篇以腾讯云为例，腾讯云官网购买：<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/8.png"/><br>然后实名认证后进入腾讯云控制台，点云解析进去，找到你刚买的域名，点进去添加两条解析记录，如下图所示：<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/9.png"/><br>然后打开你的 github 博客项目，点击 <code>settings</code>，拉到下面<code>Custom domain</code> 处，填上你自己的域名，保存：<br><img src="https://nknnn.oss-cn-chengdu.aliyuncs.com/10.png"/><br>这时候你的项目根目录应该会出现一个名为 <code>CNAME</code> 的文件了。如果没有的话，打开你本地博客 <code>/source</code> 目录，我的是 <code>D:\myblog</code>，新建<code>CNAME</code> 文件，注意没有后缀。然后在里面写上你的域名，保存。最后运行 <code>hexo g</code>、<code>hexo d</code> 上传到 github。<br>过不了多久，再打开你的浏览器，输入你自己的专属域名，就可以看到搭建的网站啦！</p>
+<h2 id="8- 写文章、发布文章"><a href="#8- 写文章、发布文章" class="headerlink" title="8. 写文章、发布文章"></a>8. 写文章、发布文章 </h2><p> 首先在博客根目录下右键打开 git bash，安装一个扩展 <code>npm i hexo-deployer-git</code>。<br> 然后输入 <code>hexo new post &quot;article title&quot;</code>，新建一篇文章。<br> 然后打开 <code>D:\Study\MyBlog\source\_posts</code> 的目录，可以发现下面多了一个文件夹和一个 <code>.md</code> 文件，一个用来存放你的图片等数据，另一个就是你的文章文件啦。<br>你可以会直接在 <code>vscode</code> 里面编写 <code>markdown</code> 文件，可以实时预览，也可以用用 <code> 其他编辑 md 文件的软件的工具 </code> 编写。<br>编写完 markdown 文件后，根目录下输入 <code>hexo g</code> 生成静态网页，然后输入 <code>hexo s</code> 可以本地预览效果，最后输入 <code>hexo d</code> 上传到 github 上。这时打开你的 <code>github.io 主页</code> 就能看到发布的文章啦。<br>到这儿基本第一部分就完成了，已经完整搭建起一个比较简陋的个人博客了，接下来我们就可以对我们的博客进行个性化定制了。</p>
+<h1 id="第二部分 - 定制"><a href="# 第二部分 - 定制" class="headerlink" title="第二部分 定制"></a>第二部分 定制 </h1><p> 我们要定制自己的博客的话，首先就要来了解一下 Hexo 博客的一些目录和文件的作用，以及如何平滑更换漂亮的主题模板并加入自己的定制源代码实现个性化定制</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1598554108@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>Hexo+Github 博客搭建教程</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">2.9k</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="记忆存储">记忆存储</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-03-11, 19:52:42</p>
+    <p><span class="copy-title">最后更新:</span>2020-03-13, 14:52:37</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/archives/%E5%AE%9E%E9%AA%8C%E4%B8%87%E4%B8%88two.html" title="Hexo+Github 博客搭建教程">https://nknnn.top/archives/%E5%AE%9E%E9%AA%8C%E4%B8%87%E4%B8%88two.html</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2020 记忆存储</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#博客','#Hexo','#教程','#学习记录','#技能',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
